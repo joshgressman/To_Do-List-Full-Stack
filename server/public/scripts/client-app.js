@@ -57,6 +57,7 @@ $.ajax({
 }
 // .children().last().data();
 function deleteTask () {
+  var conf = confirm("are you sure");
   //selector to find the tr data for id
   var taskId = $(this).closest('tr').find("#rowId").text();
   //row id into object sent as data idObject
