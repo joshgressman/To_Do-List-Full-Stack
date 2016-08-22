@@ -1,0 +1,38 @@
+1. Did not load all the npm files. Prevented the pg from working
+- npm init // Loads Node Package Manager
+- npm install express --save //Loads json folder and node folders
+- npm install body-parser // loads body parser set up req.body objects
+-npm install jquery // brings in jquery file / place in vendor file
+- npm install bootstrap // optional downloads bootstrap // place in styles or vendors
+-npm install pg // installs postgres to use for database communication
+
+2. Routing files not working, several syntax errors and the link was wrong
+//app.js
+var list = require('./routes/list');
+app.use(bodyParser.urlencoded({extended:true}));
+app.use('/list', list); //list is the variable above
+
+3. Make sure the click event is not for the whole form, select the button not the
+whole form
+$('#form').on('click', '#task-submit',  postTask);
+
+4. The bodyParser object exposes various factories to create middlewares.
+All middlewares will populate the req.body property with the parsed body,
+or an empty object ({}) if there was no body to parse (or an error was returned).
+
+It populates req.body with (among other things) the value of the POST parameters. Here's the doc and examples: http://expressjs.com/api.html#req.body
+
+bodyParser is a part of "Connect", a set of middlewares for node.js. Here's the real docs and source from Connect:
+
+5. rout links duplicate send a header error from the 500 make sure to crete specific links
+when routing multiple POST or GET
+
+6. Transversing the DOM to find elements needed worked
+
+7. Next time may be easier to append to a from/input instead of a table, in
+return may be easier to pull data from DOM using serialize array
+
+8. when routing to modules make sure protocal is followed when linking and exporting
+
+9. note the id used in client.query, make sure to make use of $1 $numbers to
+   select values

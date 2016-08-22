@@ -1,0 +1,57 @@
+body {
+  /*background-color: #BAE3F5;*/
+
+}
+header {
+  height: 200px;
+  background-image: url('/images/mountain.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: gray;
+  /*padding: 1px 0 0 30px;*/
+}
+ header h1 {
+ font-size: 4.0em;
+ text-align: center;
+ color:white;
+ }
+
+
+#task {
+  width: 400px;
+
+}
+
+#comp{
+  visibility: hidden;
+}
+#form{
+  background-color: #D5DCDE;
+  padding: 2px 0 10px 10px;
+}
+
+table, th, td {
+  margin-top: 20px;
+  border: solid thin black;
+
+}
+th {
+  background-color: rgb(30, 118, 189);
+  color:white;
+}
+
+
+
+.task-cont {
+  width: 500px;
+  padding-left: 10px;
+}
+
+.comp-cent{
+  text-align: center;
+
+}
+
+.color {
+background-color:#1DF09B;
+}
